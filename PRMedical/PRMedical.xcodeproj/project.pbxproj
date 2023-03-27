@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B02B1E0029BF7AD400314EB1 /* AddDoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B1DFF29BF7AD400314EB1 /* AddDoseView.swift */; };
+		B02B1E0329BF803800314EB1 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B1E0229BF803800314EB1 /* TabManager.swift */; };
+		B02B1E0829BF852F00314EB1 /* PillReminderRouteViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B1E0729BF852F00314EB1 /* PillReminderRouteViews.swift */; };
+		B02B1E0A29BF87B300314EB1 /* PillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B1E0929BF87B300314EB1 /* PillModel.swift */; };
+		B02B1E0C29BF886B00314EB1 /* AddPillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B1E0B29BF886B00314EB1 /* AddPillViewModel.swift */; };
+		B02B87AF29BA031D0067E5D2 /* PRMedicalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87AE29BA031D0067E5D2 /* PRMedicalApp.swift */; };
+		B02B87B329BA031E0067E5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02B87B229BA031E0067E5D2 /* Assets.xcassets */; };
+		B02B87B629BA031E0067E5D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02B87B529BA031E0067E5D2 /* Preview Assets.xcassets */; };
+		B02B87C029BA03790067E5D2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87BF29BA03790067E5D2 /* HomeView.swift */; };
+		B02B87C229BA04C10067E5D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87C129BA04C10067E5D2 /* MainView.swift */; };
+		B02B87C529BA05D70067E5D2 /* PillsReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87C429BA05D70067E5D2 /* PillsReminderView.swift */; };
+		B02B87C729BA0A440067E5D2 /* PillReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87C629BA0A440067E5D2 /* PillReminderViewModel.swift */; };
+		B02B87CA29BA0A8F0067E5D2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B02B87C929BA0A8F0067E5D2 /* Realm */; };
+		B02B87CC29BA0A8F0067E5D2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B02B87CB29BA0A8F0067E5D2 /* RealmSwift */; };
+		B02B87CF29BA0C090067E5D2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87CE29BA0C090067E5D2 /* NotificationManager.swift */; };
+		B02B87D129BA49D60067E5D2 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87D029BA49D60067E5D2 /* RealmManager.swift */; };
+		B02B87D429BA4D1A0067E5D2 /* AddPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02B87D329BA4D1A0067E5D2 /* AddPillView.swift */; };
+		B06536B029C41F39000A22B9 /* LoginFlowRouteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065369D29C41F39000A22B9 /* LoginFlowRouteManager.swift */; };
+		B06536B129C41F39000A22B9 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065369F29C41F39000A22B9 /* LoginRequestModel.swift */; };
+		B06536B229C41F39000A22B9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A029C41F39000A22B9 /* LoginViewModel.swift */; };
+		B06536B329C41F39000A22B9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A129C41F39000A22B9 /* LoginView.swift */; };
+		B06536B429C41F39000A22B9 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A229C41F39000A22B9 /* LoginResponseModel.swift */; };
+		B06536B529C41F39000A22B9 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A429C41F39000A22B9 /* SignupViewModel.swift */; };
+		B06536B629C41F39000A22B9 /* SignupRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A529C41F39000A22B9 /* SignupRequestModel.swift */; };
+		B06536B729C41F39000A22B9 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A629C41F39000A22B9 /* SignupView.swift */; };
+		B06536B829C41F39000A22B9 /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A729C41F39000A22B9 /* SignupResponseModel.swift */; };
+		B06536B929C41F39000A22B9 /* LoginAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A829C41F39000A22B9 /* LoginAlerts.swift */; };
+		B06536BA29C41F39000A22B9 /* MainLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536A929C41F39000A22B9 /* MainLoginView.swift */; };
+		B06536BB29C41F39000A22B9 /* ForgotPasswordResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536AB29C41F39000A22B9 /* ForgotPasswordResponseModel.swift */; };
+		B06536BC29C41F39000A22B9 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536AC29C41F39000A22B9 /* ForgotPasswordViewModel.swift */; };
+		B06536BD29C41F39000A22B9 /* ForgotPasswordRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536AD29C41F39000A22B9 /* ForgotPasswordRequestModel.swift */; };
+		B06536BE29C41F39000A22B9 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536AE29C41F39000A22B9 /* ForgotPasswordView.swift */; };
+		B06536BF29C41F39000A22B9 /* PasswordFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536AF29C41F39000A22B9 /* PasswordFieldView.swift */; };
+		B06536C129C41F9C000A22B9 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536C029C41F9C000A22B9 /* SessionManager.swift */; };
+		B06536C429C41FCC000A22B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536C329C41FCC000A22B9 /* Constants.swift */; };
+		B06536C629C420CD000A22B9 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536C529C420CD000A22B9 /* NetworkingService.swift */; };
+		B06536C929C4212C000A22B9 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536C829C4212C000A22B9 /* Authenticator.swift */; };
+		B06536CB29C42293000A22B9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536CA29C42293000A22B9 /* Logger.swift */; };
+		B06536CD29C42399000A22B9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536CC29C42399000A22B9 /* RootView.swift */; };
+		B06536CF29C423CF000A22B9 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536CE29C423CF000A22B9 /* OnBoardingView.swift */; };
+		B06536D229C43BEF000A22B9 /* CustomInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536D129C43BEF000A22B9 /* CustomInputFieldView.swift */; };
+		B06536D429C4458D000A22B9 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536D329C4458D000A22B9 /* SelectionView.swift */; };
+		B06536D629C4A377000A22B9 /* OptionSelectionCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536D529C4A377000A22B9 /* OptionSelectionCellView.swift */; };
+		B06536D929C4B610000A22B9 /* EditPersonalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536D829C4B610000A22B9 /* EditPersonalDetailView.swift */; };
+		B06536DB29C4B63F000A22B9 /* BloodGroupType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536DA29C4B63F000A22B9 /* BloodGroupType.swift */; };
+		B06536DD29C4B653000A22B9 /* AllergyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536DC29C4B653000A22B9 /* AllergyType.swift */; };
+		B06536DF29C4B823000A22B9 /* PersonalDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536DE29C4B823000A22B9 /* PersonalDetailManager.swift */; };
+		B06536E129C51EC8000A22B9 /* CustomBottomButtonLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536E029C51EC8000A22B9 /* CustomBottomButtonLayoutView.swift */; };
+		B06536E629C5AACD000A22B9 /* PersonalDetailDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06536E529C5AACD000A22B9 /* PersonalDetailDBModel.swift */; };
+		B0EF2FBB29D07A6C0020D8D7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF2FBA29D07A6C0020D8D7 /* CustomCell.swift */; };
+		B0EF2FBE29D0B9190020D8D7 /* PillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF2FBD29D0B9190020D8D7 /* PillDetailView.swift */; };
+		B0EF2FC329D0BDF70020D8D7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF2FC229D0BDF70020D8D7 /* CustomButton.swift */; };
+		B0EF2FC529D15C210020D8D7 /* CustomPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF2FC429D15C210020D8D7 /* CustomPasswordField.swift */; };
+		B0EF2FC729D16EFF0020D8D7 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF2FC629D16EFF0020D8D7 /* SelectionCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B02B1DFF29BF7AD400314EB1 /* AddDoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDoseView.swift; sourceTree = "<group>"; };
+		B02B1E0229BF803800314EB1 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
+		B02B1E0729BF852F00314EB1 /* PillReminderRouteViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillReminderRouteViews.swift; sourceTree = "<group>"; };
+		B02B1E0929BF87B300314EB1 /* PillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillModel.swift; sourceTree = "<group>"; };
+		B02B1E0B29BF886B00314EB1 /* AddPillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillViewModel.swift; sourceTree = "<group>"; };
+		B02B87AB29BA031D0067E5D2 /* PRMedical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRMedical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02B87AE29BA031D0067E5D2 /* PRMedicalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRMedicalApp.swift; sourceTree = "<group>"; };
+		B02B87B229BA031E0067E5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B02B87B529BA031E0067E5D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B02B87BF29BA03790067E5D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B02B87C129BA04C10067E5D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B02B87C429BA05D70067E5D2 /* PillsReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsReminderView.swift; sourceTree = "<group>"; };
+		B02B87C629BA0A440067E5D2 /* PillReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillReminderViewModel.swift; sourceTree = "<group>"; };
+		B02B87CE29BA0C090067E5D2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B02B87D029BA49D60067E5D2 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B02B87D329BA4D1A0067E5D2 /* AddPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPillView.swift; sourceTree = "<group>"; };
+		B065369D29C41F39000A22B9 /* LoginFlowRouteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginFlowRouteManager.swift; path = PRMedical/LoginFlow/LoginFlowRouteManager.swift; sourceTree = SOURCE_ROOT; };
+		B065369F29C41F39000A22B9 /* LoginRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		B06536A029C41F39000A22B9 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B06536A129C41F39000A22B9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B06536A229C41F39000A22B9 /* LoginResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		B06536A429C41F39000A22B9 /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		B06536A529C41F39000A22B9 /* SignupRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupRequestModel.swift; sourceTree = "<group>"; };
+		B06536A629C41F39000A22B9 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		B06536A729C41F39000A22B9 /* SignupResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
+		B06536A829C41F39000A22B9 /* LoginAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginAlerts.swift; path = PRMedical/LoginFlow/LoginAlerts.swift; sourceTree = SOURCE_ROOT; };
+		B06536A929C41F39000A22B9 /* MainLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainLoginView.swift; path = PRMedical/LoginFlow/MainLoginView.swift; sourceTree = SOURCE_ROOT; };
+		B06536AB29C41F39000A22B9 /* ForgotPasswordResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponseModel.swift; sourceTree = "<group>"; };
+		B06536AC29C41F39000A22B9 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		B06536AD29C41F39000A22B9 /* ForgotPasswordRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequestModel.swift; sourceTree = "<group>"; };
+		B06536AE29C41F39000A22B9 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		B06536AF29C41F39000A22B9 /* PasswordFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordFieldView.swift; path = PRMedical/LoginFlow/ForgotPassword/PasswordFieldView.swift; sourceTree = SOURCE_ROOT; };
+		B06536C029C41F9C000A22B9 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		B06536C329C41FCC000A22B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B06536C529C420CD000A22B9 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		B06536C829C4212C000A22B9 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		B06536CA29C42293000A22B9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B06536CC29C42399000A22B9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B06536CE29C423CF000A22B9 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		B06536D129C43BEF000A22B9 /* CustomInputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFieldView.swift; sourceTree = "<group>"; };
+		B06536D329C4458D000A22B9 /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		B06536D529C4A377000A22B9 /* OptionSelectionCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectionCellView.swift; sourceTree = "<group>"; };
+		B06536D829C4B610000A22B9 /* EditPersonalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonalDetailView.swift; sourceTree = "<group>"; };
+		B06536DA29C4B63F000A22B9 /* BloodGroupType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodGroupType.swift; sourceTree = "<group>"; };
+		B06536DC29C4B653000A22B9 /* AllergyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyType.swift; sourceTree = "<group>"; };
+		B06536DE29C4B823000A22B9 /* PersonalDetailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailManager.swift; sourceTree = "<group>"; };
+		B06536E029C51EC8000A22B9 /* CustomBottomButtonLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomButtonLayoutView.swift; sourceTree = "<group>"; };
+		B06536E529C5AACD000A22B9 /* PersonalDetailDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailDBModel.swift; sourceTree = "<group>"; };
+		B0EF2FBA29D07A6C0020D8D7 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B0EF2FBD29D0B9190020D8D7 /* PillDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillDetailView.swift; sourceTree = "<group>"; };
+		B0EF2FC229D0BDF70020D8D7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B0EF2FC429D15C210020D8D7 /* CustomPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordField.swift; sourceTree = "<group>"; };
+		B0EF2FC629D16EFF0020D8D7 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B02B87A829BA031D0067E5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02B87CC29BA0A8F0067E5D2 /* RealmSwift in Frameworks */,
+				B02B87CA29BA0A8F0067E5D2 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B02B1E0129BF802F00314EB1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B02B87C129BA04C10067E5D2 /* MainView.swift */,
+				B02B1E0229BF803800314EB1 /* TabManager.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B02B1E0429BF847400314EB1 /* AddPill */ = {
+			isa = PBXGroup;
+			children = (
+				B02B87D329BA4D1A0067E5D2 /* AddPillView.swift */,
+				B02B1E0529BF847D00314EB1 /* AddPillDose */,
+				B02B1E0929BF87B300314EB1 /* PillModel.swift */,
+				B02B1E0B29BF886B00314EB1 /* AddPillViewModel.swift */,
+				B0EF2FBA29D07A6C0020D8D7 /* CustomCell.swift */,
+			);
+			path = AddPill;
+			sourceTree = "<group>";
+		};
+		B02B1E0529BF847D00314EB1 /* AddPillDose */ = {
+			isa = PBXGroup;
+			children = (
+				B02B1DFF29BF7AD400314EB1 /* AddDoseView.swift */,
+			);
+			path = AddPillDose;
+			sourceTree = "<group>";
+		};
+		B02B1E0629BF850600314EB1 /* AddDocument */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddDocument;
+			sourceTree = "<group>";
+		};
+		B02B87A229BA031D0067E5D2 = {
+			isa = PBXGroup;
+			children = (
+				B02B87AD29BA031D0067E5D2 /* PRMedical */,
+				B02B87AC29BA031D0067E5D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B02B87AC29BA031D0067E5D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B02B87AB29BA031D0067E5D2 /* PRMedical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B02B87AD29BA031D0067E5D2 /* PRMedical */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FBF29D0BDD80020D8D7 /* HelperViews */,
+				B02B87AE29BA031D0067E5D2 /* PRMedicalApp.swift */,
+				B06536D029C42436000A22B9 /* Root */,
+				B02B87BC29BA03440067E5D2 /* OnBoarding */,
+				B02B87BD29BA034B0067E5D2 /* Login */,
+				B02B1E0129BF802F00314EB1 /* Main */,
+				B06536D729C4B5FC000A22B9 /* PersonalDetail */,
+				B02B87BE29BA035B0067E5D2 /* Home */,
+				B02B1E0629BF850600314EB1 /* AddDocument */,
+				B02B87C329BA05BE0067E5D2 /* Pill Reminder */,
+				B06536C729C420ED000A22B9 /* Managers */,
+				B02B87CD29BA0BF40067E5D2 /* Service */,
+				B02B87D229BA4AB00067E5D2 /* DatabaseModel */,
+				B06536C229C41FC2000A22B9 /* Utility */,
+				B02B87B229BA031E0067E5D2 /* Assets.xcassets */,
+				B02B87B429BA031E0067E5D2 /* Preview Content */,
+			);
+			path = PRMedical;
+			sourceTree = "<group>";
+		};
+		B02B87B429BA031E0067E5D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B02B87B529BA031E0067E5D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B02B87BC29BA03440067E5D2 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				B06536CE29C423CF000A22B9 /* OnBoardingView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		B02B87BD29BA034B0067E5D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B06536A929C41F39000A22B9 /* MainLoginView.swift */,
+				B065369D29C41F39000A22B9 /* LoginFlowRouteManager.swift */,
+				B06536A829C41F39000A22B9 /* LoginAlerts.swift */,
+				B06536AA29C41F39000A22B9 /* ForgotPassword */,
+				B065369E29C41F39000A22B9 /* Login */,
+				B06536A329C41F39000A22B9 /* SignUp */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B02B87BE29BA035B0067E5D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B02B87BF29BA03790067E5D2 /* HomeView.swift */,
+				B06536D129C43BEF000A22B9 /* CustomInputFieldView.swift */,
+				B06536D329C4458D000A22B9 /* SelectionView.swift */,
+				B06536D529C4A377000A22B9 /* OptionSelectionCellView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B02B87C329BA05BE0067E5D2 /* Pill Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FBC29D0B90B0020D8D7 /* PillDetail */,
+				B02B87C429BA05D70067E5D2 /* PillsReminderView.swift */,
+				B02B87C629BA0A440067E5D2 /* PillReminderViewModel.swift */,
+				B02B1E0729BF852F00314EB1 /* PillReminderRouteViews.swift */,
+				B02B1E0429BF847400314EB1 /* AddPill */,
+			);
+			path = "Pill Reminder";
+			sourceTree = "<group>";
+		};
+		B02B87CD29BA0BF40067E5D2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B06536C529C420CD000A22B9 /* NetworkingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B02B87D229BA4AB00067E5D2 /* DatabaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				B06536E229C5AAAB000A22B9 /* PersonalDetail */,
+			);
+			path = DatabaseModel;
+			sourceTree = "<group>";
+		};
+		B065369E29C41F39000A22B9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B065369F29C41F39000A22B9 /* LoginRequestModel.swift */,
+				B06536A029C41F39000A22B9 /* LoginViewModel.swift */,
+				B06536A129C41F39000A22B9 /* LoginView.swift */,
+				B06536A229C41F39000A22B9 /* LoginResponseModel.swift */,
+			);
+			name = Login;
+			path = PRMedical/LoginFlow/Login;
+			sourceTree = SOURCE_ROOT;
+		};
+		B06536A329C41F39000A22B9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B06536A429C41F39000A22B9 /* SignupViewModel.swift */,
+				B06536A529C41F39000A22B9 /* SignupRequestModel.swift */,
+				B06536A629C41F39000A22B9 /* SignupView.swift */,
+				B06536A729C41F39000A22B9 /* SignupResponseModel.swift */,
+			);
+			name = SignUp;
+			path = PRMedical/LoginFlow/SignUp;
+			sourceTree = SOURCE_ROOT;
+		};
+		B06536AA29C41F39000A22B9 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B06536AB29C41F39000A22B9 /* ForgotPasswordResponseModel.swift */,
+				B06536AC29C41F39000A22B9 /* ForgotPasswordViewModel.swift */,
+				B06536AD29C41F39000A22B9 /* ForgotPasswordRequestModel.swift */,
+				B06536AE29C41F39000A22B9 /* ForgotPasswordView.swift */,
+				B06536AF29C41F39000A22B9 /* PasswordFieldView.swift */,
+			);
+			name = ForgotPassword;
+			path = PRMedical/LoginFlow/ForgotPassword;
+			sourceTree = SOURCE_ROOT;
+		};
+		B06536C229C41FC2000A22B9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B06536C329C41FCC000A22B9 /* Constants.swift */,
+				B06536C829C4212C000A22B9 /* Authenticator.swift */,
+				B06536CA29C42293000A22B9 /* Logger.swift */,
+				B06536DA29C4B63F000A22B9 /* BloodGroupType.swift */,
+				B06536DC29C4B653000A22B9 /* AllergyType.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B06536C729C420ED000A22B9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B02B87CE29BA0C090067E5D2 /* NotificationManager.swift */,
+				B02B87D029BA49D60067E5D2 /* RealmManager.swift */,
+				B06536C029C41F9C000A22B9 /* SessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B06536D029C42436000A22B9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B06536CC29C42399000A22B9 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B06536D729C4B5FC000A22B9 /* PersonalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B06536D829C4B610000A22B9 /* EditPersonalDetailView.swift */,
+				B06536DE29C4B823000A22B9 /* PersonalDetailManager.swift */,
+				B06536E029C51EC8000A22B9 /* CustomBottomButtonLayoutView.swift */,
+			);
+			path = PersonalDetail;
+			sourceTree = "<group>";
+		};
+		B06536E229C5AAAB000A22B9 /* PersonalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B06536E529C5AACD000A22B9 /* PersonalDetailDBModel.swift */,
+			);
+			path = PersonalDetail;
+			sourceTree = "<group>";
+		};
+		B0EF2FBC29D0B90B0020D8D7 /* PillDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FBD29D0B9190020D8D7 /* PillDetailView.swift */,
+			);
+			path = PillDetail;
+			sourceTree = "<group>";
+		};
+		B0EF2FBF29D0BDD80020D8D7 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FC229D0BDF70020D8D7 /* CustomButton.swift */,
+				B0EF2FC429D15C210020D8D7 /* CustomPasswordField.swift */,
+				B0EF2FC629D16EFF0020D8D7 /* SelectionCell.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B02B87AA29BA031D0067E5D2 /* PRMedical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02B87B929BA031E0067E5D2 /* Build configuration list for PBXNativeTarget "PRMedical" */;
+			buildPhases = (
+				B02B87A729BA031D0067E5D2 /* Sources */,
+				B02B87A829BA031D0067E5D2 /* Frameworks */,
+				B02B87A929BA031D0067E5D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRMedical;
+			packageProductDependencies = (
+				B02B87C929BA0A8F0067E5D2 /* Realm */,
+				B02B87CB29BA0A8F0067E5D2 /* RealmSwift */,
+			);
+			productName = PRMedical;
+			productReference = B02B87AB29BA031D0067E5D2 /* PRMedical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B02B87A329BA031D0067E5D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B02B87AA29BA031D0067E5D2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B02B87A629BA031D0067E5D2 /* Build configuration list for PBXProject "PRMedical" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B02B87A229BA031D0067E5D2;
+			packageReferences = (
+				B02B87C829BA0A8F0067E5D2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = B02B87AC29BA031D0067E5D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B02B87AA29BA031D0067E5D2 /* PRMedical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B02B87A929BA031D0067E5D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02B87B629BA031E0067E5D2 /* Preview Assets.xcassets in Resources */,
+				B02B87B329BA031E0067E5D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B02B87A729BA031D0067E5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06536B929C41F39000A22B9 /* LoginAlerts.swift in Sources */,
+				B06536B829C41F39000A22B9 /* SignupResponseModel.swift in Sources */,
+				B06536DD29C4B653000A22B9 /* AllergyType.swift in Sources */,
+				B06536BB29C41F39000A22B9 /* ForgotPasswordResponseModel.swift in Sources */,
+				B02B87CF29BA0C090067E5D2 /* NotificationManager.swift in Sources */,
+				B06536CD29C42399000A22B9 /* RootView.swift in Sources */,
+				B02B87D429BA4D1A0067E5D2 /* AddPillView.swift in Sources */,
+				B02B87AF29BA031D0067E5D2 /* PRMedicalApp.swift in Sources */,
+				B02B87C729BA0A440067E5D2 /* PillReminderViewModel.swift in Sources */,
+				B02B87C229BA04C10067E5D2 /* MainView.swift in Sources */,
+				B06536C129C41F9C000A22B9 /* SessionManager.swift in Sources */,
+				B0EF2FC529D15C210020D8D7 /* CustomPasswordField.swift in Sources */,
+				B06536C429C41FCC000A22B9 /* Constants.swift in Sources */,
+				B06536BF29C41F39000A22B9 /* PasswordFieldView.swift in Sources */,
+				B06536C629C420CD000A22B9 /* NetworkingService.swift in Sources */,
+				B06536D629C4A377000A22B9 /* OptionSelectionCellView.swift in Sources */,
+				B06536B129C41F39000A22B9 /* LoginRequestModel.swift in Sources */,
+				B06536D929C4B610000A22B9 /* EditPersonalDetailView.swift in Sources */,
+				B0EF2FBE29D0B9190020D8D7 /* PillDetailView.swift in Sources */,
+				B06536BE29C41F39000A22B9 /* ForgotPasswordView.swift in Sources */,
+				B06536DF29C4B823000A22B9 /* PersonalDetailManager.swift in Sources */,
+				B0EF2FC329D0BDF70020D8D7 /* CustomButton.swift in Sources */,
+				B06536B629C41F39000A22B9 /* SignupRequestModel.swift in Sources */,
+				B06536B529C41F39000A22B9 /* SignupViewModel.swift in Sources */,
+				B02B1E0C29BF886B00314EB1 /* AddPillViewModel.swift in Sources */,
+				B06536E129C51EC8000A22B9 /* CustomBottomButtonLayoutView.swift in Sources */,
+				B02B1E0329BF803800314EB1 /* TabManager.swift in Sources */,
+				B06536B029C41F39000A22B9 /* LoginFlowRouteManager.swift in Sources */,
+				B06536BC29C41F39000A22B9 /* ForgotPasswordViewModel.swift in Sources */,
+				B06536DB29C4B63F000A22B9 /* BloodGroupType.swift in Sources */,
+				B06536D229C43BEF000A22B9 /* CustomInputFieldView.swift in Sources */,
+				B06536CF29C423CF000A22B9 /* OnBoardingView.swift in Sources */,
+				B0EF2FC729D16EFF0020D8D7 /* SelectionCell.swift in Sources */,
+				B06536E629C5AACD000A22B9 /* PersonalDetailDBModel.swift in Sources */,
+				B06536B229C41F39000A22B9 /* LoginViewModel.swift in Sources */,
+				B06536B429C41F39000A22B9 /* LoginResponseModel.swift in Sources */,
+				B06536D429C4458D000A22B9 /* SelectionView.swift in Sources */,
+				B06536BD29C41F39000A22B9 /* ForgotPasswordRequestModel.swift in Sources */,
+				B06536C929C4212C000A22B9 /* Authenticator.swift in Sources */,
+				B02B87C029BA03790067E5D2 /* HomeView.swift in Sources */,
+				B06536CB29C42293000A22B9 /* Logger.swift in Sources */,
+				B06536B329C41F39000A22B9 /* LoginView.swift in Sources */,
+				B02B1E0829BF852F00314EB1 /* PillReminderRouteViews.swift in Sources */,
+				B02B1E0A29BF87B300314EB1 /* PillModel.swift in Sources */,
+				B02B87D129BA49D60067E5D2 /* RealmManager.swift in Sources */,
+				B06536BA29C41F39000A22B9 /* MainLoginView.swift in Sources */,
+				B02B87C529BA05D70067E5D2 /* PillsReminderView.swift in Sources */,
+				B06536B729C41F39000A22B9 /* SignupView.swift in Sources */,
+				B0EF2FBB29D07A6C0020D8D7 /* CustomCell.swift in Sources */,
+				B02B1E0029BF7AD400314EB1 /* AddDoseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B02B87B729BA031E0067E5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B02B87B829BA031E0067E5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B02B87BA29BA031E0067E5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PRMedical/Preview Content\"";
+				DEVELOPMENT_TEAM = NF89CMS79F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InsanelyHarsh.PRMedical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B02B87BB29BA031E0067E5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PRMedical/Preview Content\"";
+				DEVELOPMENT_TEAM = NF89CMS79F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.InsanelyHarsh.PRMedical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B02B87A629BA031D0067E5D2 /* Build configuration list for PBXProject "PRMedical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02B87B729BA031E0067E5D2 /* Debug */,
+				B02B87B829BA031E0067E5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02B87B929BA031E0067E5D2 /* Build configuration list for PBXNativeTarget "PRMedical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02B87BA29BA031E0067E5D2 /* Debug */,
+				B02B87BB29BA031E0067E5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B02B87C829BA0A8F0067E5D2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B02B87C929BA0A8F0067E5D2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B02B87C829BA0A8F0067E5D2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		B02B87CB29BA0A8F0067E5D2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B02B87C829BA0A8F0067E5D2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B02B87A329BA031D0067E5D2 /* Project object */;
+}
