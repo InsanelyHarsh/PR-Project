@@ -148,7 +148,6 @@
 				B02B1E0529BF847D00314EB1 /* AddPillDose */,
 				B02B1E0929BF87B300314EB1 /* PillModel.swift */,
 				B02B1E0B29BF886B00314EB1 /* AddPillViewModel.swift */,
-				B0EF2FBA29D07A6C0020D8D7 /* CustomCell.swift */,
 			);
 			path = AddPill;
 			sourceTree = "<group>";
@@ -187,8 +186,8 @@
 		B02B87AD29BA031D0067E5D2 /* PRMedical */ = {
 			isa = PBXGroup;
 			children = (
-				B0EF2FBF29D0BDD80020D8D7 /* HelperViews */,
 				B02B87AE29BA031D0067E5D2 /* PRMedicalApp.swift */,
+				B0EF2FBF29D0BDD80020D8D7 /* HelperViews */,
 				B06536D029C42436000A22B9 /* Root */,
 				B02B87BC29BA03440067E5D2 /* OnBoarding */,
 				B02B87BD29BA034B0067E5D2 /* Login */,
@@ -240,8 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				B02B87BF29BA03790067E5D2 /* HomeView.swift */,
-				B06536D129C43BEF000A22B9 /* CustomInputFieldView.swift */,
-				B06536D329C4458D000A22B9 /* SelectionView.swift */,
 				B06536D529C4A377000A22B9 /* OptionSelectionCellView.swift */,
 			);
 			path = Home;
@@ -371,11 +368,46 @@
 		B0EF2FBF29D0BDD80020D8D7 /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
-				B0EF2FC229D0BDF70020D8D7 /* CustomButton.swift */,
-				B0EF2FC429D15C210020D8D7 /* CustomPasswordField.swift */,
-				B0EF2FC629D16EFF0020D8D7 /* SelectionCell.swift */,
+				B0EF2FCB29D17BE40020D8D7 /* Cells */,
+				B0EF2FCA29D17B9A0020D8D7 /* Buttons */,
+				B0EF2FC929D17B8E0020D8D7 /* Fields */,
+				B0EF2FC829D17B7B0020D8D7 /* OptionSelection */,
 			);
 			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		B0EF2FC829D17B7B0020D8D7 /* OptionSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FC629D16EFF0020D8D7 /* SelectionCell.swift */,
+				B06536D329C4458D000A22B9 /* SelectionView.swift */,
+			);
+			path = OptionSelection;
+			sourceTree = "<group>";
+		};
+		B0EF2FC929D17B8E0020D8D7 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				B06536D129C43BEF000A22B9 /* CustomInputFieldView.swift */,
+				B0EF2FC429D15C210020D8D7 /* CustomPasswordField.swift */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		B0EF2FCA29D17B9A0020D8D7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FC229D0BDF70020D8D7 /* CustomButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B0EF2FCB29D17BE40020D8D7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF2FBA29D07A6C0020D8D7 /* CustomCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

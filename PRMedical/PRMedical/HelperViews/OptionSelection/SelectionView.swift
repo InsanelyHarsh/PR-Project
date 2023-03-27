@@ -28,32 +28,12 @@ struct SelectionView: View {
             ScrollView(showsIndicators: false){
                 VStack(alignment:.leading,spacing: 18){
                     ForEach(data,id:\.self){ val in
-                        
-//                        ZStack{
-//
-//                            if(selectedOption == val){
-//                                Rectangle()
-//                            }else{
-//                                Rectangle().stroke(lineWidth: 2)
-//                            }
-//
-//                            Text(val)
-//                                .foregroundColor(selectedOption != val ? .black : .white)
-//                        }
-                        
                         SelectionCell(pillName: val, selectedValue: $selectedOption)
-//                        .frame(height: 50, alignment: .center)
-                        .onTapGesture {
-                            if(selectedOption == val){
-                                selectedOption = ""
-                            }else{
-                                selectedOption = val
-                            }
-                        }
                     }
                 }
+                
+                Color.clear.frame(height: 150)
             }
-            
             
             CustomBottomButtonLayoutView {
                 action(selectedOption)
@@ -68,7 +48,7 @@ struct SelectionView: View {
 
 struct SelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        SelectionView(currentSelectedValue: "", data: ["Option 01","Option 02","Option 03"]){ selection in
+        SelectionView(currentSelectedValue: "", data: ["Option 00","Option 01","Option 02","Option 03","Option 04","Option 04","Option 05","Option 06","Option 07","Option 08","Option 09"]){ selection in
             print(selection)
         }
     }
